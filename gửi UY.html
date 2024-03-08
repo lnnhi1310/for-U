@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>for Uy</title>
+        <style>
+            body
+            {
+                text-align: center;
+                background-color: pink;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Gửi tặng Uy vì tối qua anh bỏ em anh không thức cùng em,<br>em chán quá không ngủ được nên ngồi viết game cho anh giải chơi.</h1>
+        <h2 style="color: red;">!! nghiêm cấm mọi hình thức đọc source gian lận .-.!!</h2>
+        <h3>Hãy điền sinh nhật của em vào đây</h3>
+        <input type="text" id="bd" required onchange="birthDay()"/>
+        <input type="submit"/>
+        <h3>Anh có iu em hong??</h3>
+        <input type="text" id="cauHoi" required onchange="traLoi()"/>
+        <input type="submit"/>
+        <div style="background-color: lightgrey;">
+        <p id="messageA"></p><p id="messageB"></p>
+        </div>
+    </body>
+
+    <script>
+        var googleCode="1YSpUmEhR2-WNaNVLGHIYAwfxtHogl68m";
+        var messageA=document.getElementById("messageA");
+        var messageB=document.getElementById("messageB");
+        function birthDay()
+            {
+                var birthD=document.getElementById("bd").value;
+                if (birthD == "1310")
+                {
+                    messageA.textContent=("drive.google.com/file/d/");
+                }
+                else
+                {
+                    alert('anh chạ iu em!!!! Hint: caption của 1 bài viết trên IG đóooo');
+                }
+            }
+        function traLoi()
+            {
+                var cauH=document.getElementById("cauHoi").value;
+                if (cauH == "CÓ")
+                {
+                    messageB.textContent=("1YSpUmEhR2-WNaNVLGHIYAwfxtHogl68m");
+                }
+                else
+                {
+                    alert('nói "CÓ" coi?!');
+                }
+            }
+    </script>
+</html>
